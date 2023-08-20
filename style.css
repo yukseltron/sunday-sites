@@ -1,11 +1,75 @@
-/* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100&display=swap');
+
+:root {
+  --background: #fff;
+  --color: #000;
+}
 
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  background-color: var(--background);
+  color: var(--color);
+  max-width: 80vmin;
+  margin: auto;
+  font-family: 'Handjet', monospace;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000;
+    --color: #fff;
+  }
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  font-weight: 3rem;
+}
+
+h1, h2 {
+  font-weight: 100;
+  animation: flip 2s ease-in-out infinite;
+}
+
+a {
+  color: var(--color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+a:hover {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  transition: filter 0.5s ease-in-out;
+}
+
+img:hover {
+  filter: invert(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+#censor {
+  width: 400px;
+  height: 150px;
+  background-color: var(--background);
+  position: absolute;
+  top: 0;
+  left: 45%;
+  animation: slide 2s ease-in-out 1;
+}
+
+@keyframes slide {
+  0% {
+    left: 25%;
+  }
+  100% {
+    left: 100%;
+  }
 }
