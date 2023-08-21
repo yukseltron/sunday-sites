@@ -1,0 +1,55 @@
+#censor {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    animation: slide 2s ease-in-out 1 forwards;
+}
+  
+@keyframes slide {
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+#video {
+    animation: spin 12s linear infinite;
+}
+#video:hover {
+    animation-play-state: paused;
+    background-color: blue;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+#video2 {
+    animation: spin 10s linear infinite reverse;
+}
+#video2:hover {
+    animation-play-state: paused;
+    background-color: red;
+    border-radius: 25%;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+#video3 {
+    animation: spin 8s linear infinite;
+}
+#video3:hover {
+    animation-play-state: paused;
+    color: red;
+    border: 1px solid red;
+}

@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400&display=swap');
 
 :root {
   --background: #fff;
   --color: #000;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000;
+    --color: #fff;
+  }
+}
+
 
 body {
   background-color: var(--background);
@@ -12,64 +19,65 @@ body {
   margin: auto;
   font-family: 'Handjet', monospace;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 200;
+  margin-bottom: 400px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000;
-    --color: #fff;
-  }
-}
 
 h1 {
-  font-weight: 3rem;
+  font-size: 6rem;
 }
 
 h1, h2 {
-  font-weight: 100;
+  font-weight: 200;
+  font-style: italic;
   animation: flip 2s ease-in-out infinite;
 }
 
 a {
+  font-weight: 300;
+  text-decoration: none;
+  border: 3px solid transparent;
+  width: fit-content;
   color: var(--color);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+  font-style: italic;
 }
 a:hover {
-  text-decoration: line-through;
-  text-decoration-thickness: 1px;
+  background-color: var(--color);
+  color: var(--background);
+  transition: all 0.5s ease-in-out;
+}
+a:focus {
+  outline: 1px solid var(--color);
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-img {
-  transition: filter 0.5s ease-in-out;
+li { 
+  margin: auto;
 }
 
-img:hover {
-  filter: invert(100%);
-  transition: filter 0.5s ease-in-out;
+li:hover {
+  height: 100%;
+  background-color: var(--color);
+  color: var(--background);
+}
+li a {
+  display: block;
 }
 
-#censor {
-  width: 400px;
-  height: 150px;
-  background-color: var(--background);
-  position: absolute;
-  top: 0;
-  left: 45%;
-  animation: slide 2s ease-in-out 1;
+svg {
+  fill: currentColor;
+  transform-origin: center;
 }
 
-@keyframes slide {
-  0% {
-    left: 25%;
-  }
-  100% {
-    left: 100%;
-  }
+text {
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
 }

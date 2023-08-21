@@ -5,29 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~yukseltron</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
   </head>
 <body>
-  <h1>yukseltron</h1>
-  <div id="censor"></div>
-  <p>
-    Welcome to my user page for
-    <a href="https://sundaysites.cafe/">Sunday Sites</a>.
-  </p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Worm_Holes%2C_By_OmniDaily.gif" alt="" width="25%" height="50%"/>
-  <p>
-    whoami:
-    <a href="https://sundaysites.cafe/">YOOKSEL</a>.
-  </p>
-  <h2>My Sunday Sites</h2>
-  <ul>
-    <li>
-      <a href="https://*your-first-sunday-site*.glitch.me">
-      https://*your-first-sunday-site*.glitch.me</a>
-    </li>
-    <li>
-      <a href="https://*your-second-sunday-site*.glitch.me">
-      https://*your-second-sunday-site*.glitch.me</a>
-    </li>
-  </ul>
+  <main>
+    <!--Intro-->
+    <section>
+      <h1>Hello</h1>
+      <div id="censor"></div>
+      <p>
+        Welcome to my user page for
+        <a href="https://sundaysites.cafe/">Sunday Sites</a>.
+      </p>
+      <a href="https://sundaysites.cafe/">whoami</a>
+    </section>
+    <!--Sunday Sites Links-->
+    <section>
+      <ul>
+        <!--Video Aug 27 2023-->
+        <li>
+          <a href="https://sundaysites.cafe/">
+            <svg id="video" viewBox="0 0 200 200" width="200px" height="200px">
+              <defs>
+                <path id="circle" d="M 100, 100
+                        m -75, 0
+                        a 75, 75 0 1, 0 150, 0
+                        a 75, 75 0 1, 0 -150, 0
+                        ">
+                </path>
+              </defs>
+              <text width="400">
+                <textPath alignment-baseline="top" xlink:href="#circle" class="text">
+                  video • video • video • video • video • video
+                </textPath>
+              </text>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
