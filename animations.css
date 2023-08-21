@@ -1,20 +1,3 @@
-#censor {
-    width: 100%;
-    height: 100%;
-    background-color: var(--background);
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    animation: slide 2s ease-in-out 1 forwards;
-}
-  
-@keyframes slide {
-    100% {
-        left: 100%;
-        opacity: 0;
-    }
-}
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);

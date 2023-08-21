@@ -1,0 +1,36 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    margin-bottom: 0;
+}
+
+section {
+    width: 100%;
+    display: flex;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    color: transparent;
+    border-color: white;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+a:focus {
+    background-color: white;
+    color: black;
+}
+
+::cue {
+    color: yellow;
+    background-color: black;
+    filter: opacity(0.5);
+    font-size: 2rem;
+    font-style: italic;
+    background: #0095dd;
+  }
