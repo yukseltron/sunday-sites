@@ -22,15 +22,97 @@ a {
     border-right: none;
 }
 a:focus {
-    background-color: white;
-    color: black;
+    color: white;
+}
+a:visited {
+    color: white !important;
 }
 
-::cue {
+video {
+    outline: 1px solid white;
+    outline-offset: 10px;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+video::cue {
     color: yellow;
-    background-color: black;
-    filter: opacity(0.5);
-    font-size: 2rem;
+    background-image: url('https://picsum.photos/500');
+    background-size: contain;
+    font-size: 3rem;
     font-style: italic;
-    background: #0095dd;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
   }
+
+.horizontal {
+    width: 80vmin;
+    height: 2px;
+    z-index: 5;
+    background-color: white;
+    position: absolute;
+    animation: slide 5s linear infinite alternate;
+}
+@keyframes slide {
+    0% {
+        transform: translateY(400px);
+    }
+    50% {
+        background-color: rgb(0, 255, 0);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.vertical {
+    height: 400px;
+    width: 2px;
+    z-index: 5;
+    background-color: white;
+    position: absolute;
+    animation: slide2 5s linear infinite alternate;
+}
+@keyframes slide2 {
+    0% {
+        transform: translateX(80vmin);
+    }
+    50% {
+        background-color: rgb(0, 255, 0);
+    }
+    100% {
+        transform: translateX(0vmin);
+    }
+}
+
+.box { 
+    height: 300px;
+    width: 200px;
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+    animation: scan 5s linear infinite alternate;
+}
+.box:hover {
+    backdrop-filter: none;
+    transition: all 0.5s ease-in-out;
+}
+@keyframes scan {
+    0% {
+        border-color: white;
+    }
+    50% {
+        border-color: rgb(0,255,0);
+    }
+    100% {
+        border-color: white;
+    }
+}
