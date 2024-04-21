@@ -9,7 +9,7 @@
 
 /* 01 */
 #week-01:hover {
-  background-color: purple;
+  background-color: pink;
 }
 #week-01 svg {
     animation: spin 10s linear infinite reverse;
@@ -24,6 +24,9 @@
 
 
 /* 32 */
+#week-32:hover {
+  background-color: white;
+}
 #week-32 svg {
     animation: spin 12s linear infinite;
 }
