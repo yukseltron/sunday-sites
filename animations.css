@@ -8,10 +8,13 @@
 }
 
 /* 01 */
-#week-01 {
+#week-01:hover {
+  background-color: purple;
+}
+#week-01 svg {
     animation: spin 10s linear infinite reverse;
 }
-#week-01:hover {
+#week-01:hover svg {
     animation-play-state: paused;
     background-color: red;
     border-radius: 25%;
@@ -21,10 +24,10 @@
 
 
 /* 32 */
-#week-32 {
+#week-32 svg {
     animation: spin 12s linear infinite;
 }
-#week-32:hover {
+#week-32:hover svg {
     animation-play-state: paused;
     background-color: blue;
     color: white;
