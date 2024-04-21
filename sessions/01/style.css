@@ -1,0 +1,13 @@
+.week-01 section {
+  line-height: 2rem;
+  width: 100%;
+  display: flex;
+  margin: 50px 0px;
+  transition: all 1s;
+}
+
+.week-01 section:hover {
+  line-height: 3rem;
+  transition: all 1s;
+  background-color: white;
+}

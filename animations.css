@@ -7,25 +7,34 @@
     }
 }
 
-#video {
-    animation: spin 12s linear infinite;
+/* 01 */
+#week-01:hover {
+  background-color: pink;
 }
-#video:hover {
-    animation-play-state: paused;
-    background-color: blue;
-    color: white;
-    transition: all 0.1s ease-in-out;
-}
-
-#video2 {
+#week-01 svg {
     animation: spin 10s linear infinite reverse;
 }
-#video2:hover {
+#week-01:hover svg {
     animation-play-state: paused;
     background-color: red;
     border-radius: 25%;
     color: white;
     transition: all 0.5s ease-in-out;
+}
+
+
+/* 32 */
+#week-32:hover {
+  background-color: white;
+}
+#week-32 svg {
+    animation: spin 12s linear infinite;
+}
+#week-32:hover svg {
+    animation-play-state: paused;
+    background-color: blue;
+    color: white;
+    transition: all 0.1s ease-in-out;
 }
 
 #video3 {
