@@ -24,3 +24,8 @@
   background-repeat: no-repeat;
 }
 
+.week-02 #clock {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+}
