@@ -116,3 +116,10 @@ video::cue {
         border-color: white;
     }
 }
+
+footer {
+    font-family: 'Handjet', monospace ;
+}
+footer a {
+  color: black;
+}

@@ -78,3 +78,8 @@ text {
   letter-spacing: 1.25px;
   text-transform: uppercase;
 }
+
+footer a:hover {
+  color: var(--background);
+  background-color: var(--color);
+}
