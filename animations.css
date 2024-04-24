@@ -1,26 +1,30 @@
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(359deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 /* 01 */
+#week-01 {
+  border: 2px solid transparent;
+}
 #week-01:hover {
-  border: 2px solid pink;
-  border-radius: 30%;
+  border-color: pink;
+  border-radius: 100%;
 }
 #week-01 svg {
-    animation: spin 10s linear infinite reverse;
+    border: 2px solid transparent;
+  animation: spin 10s linear infinite reverse;
 }
 #week-01:hover svg {
-    animation-play-state: paused;
-    background-color: red;
-    border-radius: 25%;
-    color: white;
-    transition: all 0.5s ease-in-out;
+  animation-play-state: paused;
+  border-color: red;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 /* 02 */
@@ -29,43 +33,43 @@
 }
 #week-02:hover {
   background-color: white;
-  border: 1px solid white;
   border-radius: 25%;
 }
 #week-02 svg {
-    animation: spin 10s linear infinite reverse;
+  animation: spin 10s linear infinite reverse;
 }
 #week-02:hover svg {
-    animation-play-state: paused;
-    border: 1px solid white;
-    border-radius: 25%;
-    color: white;
-    transition: all 0.5s ease-in-out;
+  animation-play-state: paused;
+  transition: all 0.5s ease-in-out;
 }
 #week-02 textPath {
-  color: black;
+  transition: all 1s ease-in-out;
 }
-
+#week-02:hover textPath {
+  color: black;
+  letter-spacing: 1rem;
+  transition: all 1s ease-in-out;
+}
 
 /* 32 */
 #week-32:hover {
   background-color: white;
 }
 #week-32 svg {
-    animation: spin 12s linear infinite;
+  animation: spin 12s linear infinite;
 }
 #week-32:hover svg {
-    animation-play-state: paused;
-    background-color: blue;
-    color: white;
-    transition: all 0.1s ease-in-out;
+  animation-play-state: paused;
+  background-color: blue;
+  color: white;
+  transition: all 0.1s ease-in-out;
 }
 
 #video3 {
-    animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
 }
 #video3:hover {
-    animation-play-state: paused;
-    color: red;
-    border: 1px solid red;
+  animation-play-state: paused;
+  color: red;
+  border: 1px solid red;
 }

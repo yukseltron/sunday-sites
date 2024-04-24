@@ -1,13 +1,93 @@
-.week-01 section {
-  line-height: 2rem;
-  width: 100%;
-  display: flex;
-  margin: 50px 0px;
-  transition: all 1s;
+* {
+  box-sizing: border-box;
+}
+.iphone-case {
+  --border-radius-outer: 2rem;
+  --outer-padding: 0.5rem;
+  --case-color: hsl(0, 0%, 0%);
+  --border-radius-inner: calc(
+    var(--border-radius-outer) - var(--outer-padding)
+  );
+  box-shadow: 0px 0px 0px 2px white;
+  background-color: var(--case-color);
+  border-radius: var(--border-radius-outer);
+  padding: var(--outer-padding);
+  width: min(250px);
+  aspect-ratio: 1/2;
+  position: relative;
+  margin-inline: auto;
+}
+.iphone-case > div {
+  --start-color: hsl(0, 0%, 0%);
+  --shadow-x: 2px;
+  height: 50%;
+  border-radius: 50%;
+  background-color: var(--base-color, #fdc1f7);
+  box-shadow: 0px 2px 10px var(--base-color);
+  background-size: 100% 200%;
+}
+.iphone-case .gradient-1 {
+  --gradient-stop-1: 30%;
+  border-top-left-radius: var(--border-radius-inner);
+  border-top-right-radius: var(--border-radius-inner);
+  border-bottom: 3px solid var(--base-color);
+  box-shadow: 0px 2px 4px var(--base-color);
+  /* background-image: radial-gradient(circle at bottom, var(--start-color) var(--gradient-stop-1), var(--color-stop-center),  var(--base-color) 90%); */
+  background-image: -webkit-radial-gradient(
+    circle,
+    var(--start-color) var(--gradient-stop-1),
+    var(--color-stop-center),
+    var(--base-color) 90%
+  );
+  background-image: radial-gradient(
+    circle,
+    var(--start-color) var(--gradient-stop-1),
+    var(--color-stop-center),
+    var(--base-color) 90%
+  );
+  background-position: 50% 200%;
+  background-size: 100% 200%;
+}
+.iphone-case .gradient-2 {
+  --gradient-stop-1: 65%;
+  --gradient-stop-2: 80%;
+  border-bottom-left-radius: var(--border-radius-inner);
+  border-bottom-right-radius: var(--border-radius-inner);
+  border-top: 3px solid var(--base-color);
+  box-shadow: 0px -2px 4px var(--base-color);
+  /* background-image: radial-gradient(circle at top, var(--start-color) var(--gradient-stop-1), var(--color-2, hsl(0, 0%, 0%)) var( --gradient-stop-2) , var(--base-color) 100%); */
+  background-image: -webkit-radial-gradient(
+    circle,
+    var(--start-color) var(--gradient-stop-1),
+    var(--color-2, hsl(0, 0%, 0%)) var(--gradient-stop-2),
+    var(--base-color) 100%
+  );
+  background-image: radial-gradient(
+    circle,
+    var(--start-color) var(--gradient-stop-1),
+    var(--color-2, hsl(0, 0%, 0%)) var(--gradient-stop-2),
+    var(--base-color) 100%
+  );
+  background-position: 50% 100%;
+}
+.case-1 .gradient-1 {
+  --base-color: #fdc1f7;
+  --color-stop-center: #230a77, #c84fe4;
+}
+.case-1 .gradient-2 {
+  --color-2: #400898;
+  --base-color: #8778d1;
 }
 
-.week-01 section:hover {
-  line-height: 3rem;
-  transition: all 1s;
-  background-color: white;
+.iphone-case:before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.3rem;
+  background-color: var(--case-color);
+  width: 22%;
+  border-radius: 25px;
 }
+
