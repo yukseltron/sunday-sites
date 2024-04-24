@@ -8,10 +8,6 @@
 }
 
 /* 01 */
-#week-01 {
-  font-family: sans-serif;
-  font-size: 80%;
-}
 #week-01:hover {
   border: 2px solid pink;
   border-radius: 30%;
@@ -25,6 +21,29 @@
     border-radius: 25%;
     color: white;
     transition: all 0.5s ease-in-out;
+}
+
+/* 02 */
+#week-02 {
+  font-family: sans-serif;
+}
+#week-02:hover {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 25%;
+}
+#week-02 svg {
+    animation: spin 10s linear infinite reverse;
+}
+#week-02:hover svg {
+    animation-play-state: paused;
+    border: 1px solid white;
+    border-radius: 25%;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+#week-02 textPath {
+  color: black;
 }
 
 
