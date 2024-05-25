@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+.iphone-case {
+  --border-radius-outer: 2rem;
+  --outer-padding: 0.5rem;
+  --case-color: hsl(0, 0%, 0%);
+  --border-radius-inner: calc(
+    var(--border-radius-outer) - var(--outer-padding)
+  );
+  border-radius: var(--border-radius-outer);
+  padding: var(--outer-padding);
+  width: min(250px);
+  aspect-ratio: 1/2;
+  position: relative;
+  margin-inline: auto;
+}
+
+.case-1 {
+  background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2NxNGdnb2dheXY0MGJiMzFkd3I3cjVqY25mMGF1Nnc4cnR1ZGN2MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WWSPhALYIBk1wtIwGZ/giphy.gif'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.case-2 {
+  background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpmc2hwdWppZWhia2RoaWp6aDg1M3FsZmZiM3BhZzFqYmduc282OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/T2IEmSHnywCWlyD5Px/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.case-3 {
+  background: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDBoY283YmNieHQzZGU2cDhkYjdyM2Fqb3ZteTFldXl1Z3kyeWxmYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kGq5DYezHpwny5oGf1/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.case-4 {
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExamM0c2QwcmR0cGt4aW15cm04dHkwbG43c2d5bHVpczBmb2pjYmgzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3c614V12UA82q1vG/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.case-5 {
+  background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmgwZmUzdXVpeGNxaXVwcm5zeTQwb3RjMWE0bDRtY2d2NTJlaGUwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HADJFxlJv4AF2rUAB6/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.case-6 {
+  background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3FqZTU5ejNkaGt2ajA2OGQ3bnU3aGExeHMwcXZwanB0cXloYW1hbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1tk0zuY90KbKyCsMs6/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.week-02 #clock {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+}

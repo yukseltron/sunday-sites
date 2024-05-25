@@ -51,6 +51,30 @@
   transition: all 1s ease-in-out;
 }
 
+/* 03 */
+#week-03 {
+  font-family: monospace;
+}
+#week-03:hover {
+  background-color: white;
+  border-radius: 25%;
+}
+#week-03 svg {
+  animation: spin 5s linear infinite;
+}
+#week-03:hover svg {
+  animation-play-state: paused;
+  transition: all 0.5s ease-in-out;
+}
+#week-03 textPath {
+  transition: all 1s ease-in-out;
+}
+#week-03:hover textPath {
+  color: black;
+  letter-spacing: 1rem;
+  transition: all 1s ease-in-out;
+}
+
 /* 32 */
 #week-32:hover {
   background-color: white;
