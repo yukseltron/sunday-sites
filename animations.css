@@ -56,8 +56,9 @@
   font-family: monospace;
 }
 #week-03:hover {
-  background-color: white;
-  border-radius: 25%;
+  background-color: lightgreen;
+  outline: 3px solid green;
+  border-radius: 100%;
 }
 #week-03 svg {
   animation: spin 5s linear infinite;
@@ -71,7 +72,7 @@
 }
 #week-03:hover textPath {
   color: black;
-  letter-spacing: 1rem;
+  font-weight: bold;
   transition: all 1s ease-in-out;
 }
 
