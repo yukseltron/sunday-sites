@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
-.week-03 {
-  
+.week-03 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.week-03 img {
+  mix-blend-mode: difference;
+  width: 400px;
+  position: absolute;
+}
+
+.week-03 .chairs {
+  display: flex;
+  justify-content: center;
+}
+
+.week-03 #person {
+  visibility: hidden;
 }
