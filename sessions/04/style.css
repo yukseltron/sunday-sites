@@ -9,9 +9,23 @@
   height: 100vh;
 }
 
-.week-04 #dream-01 {
+.week-04 .dream {
   width: 100px;
   height: 50px;
   background-color: lime;
-  position: absolute;
+  position: absolute; 
+  border-radius: 100%;
+}
+.week-04 .dream:hover {
+  background-color: crimson;
+}
+
+.week-04 #dream-01 {
+  top: 10%;
+}
+.week-04 #dream-02 {
+  top: 20%;
+}
+.week-04 #dream-03 {
+  top: 30%;
 }
