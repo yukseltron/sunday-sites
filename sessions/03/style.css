@@ -12,13 +12,29 @@
   mix-blend-mode: difference;
   width: 400px;
   position: absolute;
+  height: 400px;
+}
+
+.week-03 p {
+  width: 400px;
+  margin-top: 200px;
+  color: black;
 }
 
 .week-03 .chairs {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
-.week-03 #person {
+.week-03 .chairs:hover .person {
+  visibility: visible;
+  background-color: white;
+}
+.week-03 .chairs:hover p {
+  color: white;
+}
+
+.week-03 .person {
   visibility: hidden;
 }
