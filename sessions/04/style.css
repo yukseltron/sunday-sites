@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.week-04 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -20,6 +20,9 @@
   margin-top: 200px;
   color: black;
 }
+.week-03 footer p {
+  color: white;
+}
 
 .week-03 .chairs {
   display: flex;
