@@ -76,21 +76,32 @@
   transition: all 1s ease-in-out;
 }
 
-/* 03 */
+/* 04 */
+#week-04 {
+  font-family: serif;
+}
 #week-04:hover {
-  background: purple;
   filter: drop-shadow(0 0 0.75rem purple);
 }
 #week-04 svg {
   animation: spin 50s linear infinite;
 }
+#week-04 polygon {
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
 #week-04:hover svg {
   animation-play-state: paused;
   transition: all 0.5s ease-in-out;
 }
+#week-04:hover polygon {
+  visibility: visible;
+  transition: all 1s ease-in-out;
+}
 #week-04 textPath {
   color: white;
   letter-spacing: 10px;
+  text-length: 100px;
   length-adjust: spacingAndGlyphs;
   transition: all 1s ease-in-out;
 }
