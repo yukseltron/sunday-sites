@@ -81,22 +81,23 @@
   font-family: serif;
 }
 #week-04:hover {
-  filter: drop-shadow(0 0 0.75rem purple);
+  filter: drop-shadow(0 0 0.75rem lime);
 }
 #week-04 svg {
   animation: spin 50s linear infinite;
 }
-#week-04 polygon {
-  visibility: hidden;
-  transition: all 1s ease-in-out;
-}
 #week-04:hover svg {
   animation-play-state: paused;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ;
+}
+#week-04 polygon {
+  fill: transparent;
+  visibility: hidden;
+  transition: all 0.5s;
 }
 #week-04:hover polygon {
   visibility: visible;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s;
 }
 #week-04 textPath {
   color: white;
