@@ -76,6 +76,28 @@
   transition: all 1s ease-in-out;
 }
 
+/* 03 */
+#week-04:hover {
+  background: purple;
+  filter: drop-shadow(0 0 0.75rem purple);
+}
+#week-04 svg {
+  animation: spin 50s linear infinite;
+}
+#week-04:hover svg {
+  animation-play-state: paused;
+  transition: all 0.5s ease-in-out;
+}
+#week-04 textPath {
+  color: white;
+  letter-spacing: 10px;
+  length-adjust: spacingAndGlyphs;
+  transition: all 1s ease-in-out;
+}
+#week-04:hover textPath {
+  transition: all 1s ease-in-out;
+}
+
 /* 32 */
 #week-32:hover {
   background-color: white;
