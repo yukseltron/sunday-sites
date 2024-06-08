@@ -119,11 +119,12 @@
 }
 #week-05 textPath {
   color: white;
-  letter-spacing: 100px;
+  letter-spacing: 50px;
   transition: all 1s ease-in-out;
 }
 #week-05:hover textPath {
-  letter-spacing: 10px;
+  letter-spacing: 1px;
+  color: pink;
   transition: all 1s ease-in-out;
 }
 
