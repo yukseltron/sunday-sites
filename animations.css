@@ -110,6 +110,23 @@
   transition: all 1s ease-in-out;
 }
 
+/* 05 */
+#week-05 {
+  font-family: monospace;
+}
+#week-05 svg {
+  animation: spin 50s linear infinite reverse;
+}
+#week-05 textPath {
+  color: white;
+  letter-spacing: 100px;
+  transition: all 1s ease-in-out;
+}
+#week-05:hover textPath {
+  letter-spacing: 10px;
+  transition: all 1s ease-in-out;
+}
+
 /* 32 */
 #week-32:hover {
   background-color: white;
