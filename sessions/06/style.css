@@ -8,3 +8,16 @@
   align-items: center;
   height: 100vh;
 }
+
+.week-06 .image {
+  width: 500px;
+  max-height: 500px;
+}
+
+.week-06 main .viewbox {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border: 2px solid white;
+  overflow: scroll;
+}
