@@ -20,3 +20,8 @@
   border: 2px solid white;
   overflow: scroll;
 }
+.week-06 .box {
+  position: fixed;
+  border: 1px solid white;
+  left: 2%;
+}
