@@ -9,9 +9,8 @@
   height: 100vh;
 }
 
-.week-06 .image {
-  width: 500px;
-  max-height: 500px;
+.week-06 main .viewbox .image img{
+  width: 1500px;
 }
 
 .week-06 main .viewbox {
