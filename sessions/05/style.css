@@ -8,3 +8,12 @@
   align-items: center;
   height: 100vh;
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
