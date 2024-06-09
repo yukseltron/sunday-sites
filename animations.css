@@ -115,7 +115,7 @@
   font-family: monospace;
 }
 #week-05 svg {
-  animation: spin 50s linear infinite reverse;
+  animation: spin 20s linear infinite reverse;
 }
 #week-05 textPath {
   color: white;
@@ -126,6 +126,28 @@
   letter-spacing: 1px;
   color: pink;
   transition: all 1s ease-in-out;
+}
+
+/* 06 */
+#week-06 {
+  font-family: monospace;
+}
+#week-06 svg {
+  animation: spin 10s forwards infinite;
+}
+#week-06 textPath {
+  color: white;
+  letter-spacing: 50px;
+  transition: all 1s ease-in-out;
+}
+#week-06:hover {
+  background-color: #A7C2C8;
+  outline: 2px solid #A7C2C8;
+  outline-offset: 5px;
+  transition: all 1s ease-in-out;
+}
+#week-06:hover * {
+  color: black;
 }
 
 /* 32 */

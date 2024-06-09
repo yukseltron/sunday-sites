@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.week-06 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
