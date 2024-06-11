@@ -150,6 +150,27 @@
   color: black;
 }
 
+/* 07 */
+#week-07 {
+  font-family: monospace;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+#week-07 p {
+  animation: spin 10s forwards infinite;
+  text-align: center;
+  font-size: 1rem;
+}
+#week-07:hover {
+  background-color: orange;
+}
+
 /* 32 */
 #week-32:hover {
   background-color: white;
