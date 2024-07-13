@@ -156,15 +156,14 @@
   width: 150px;
   height: 150px;
   border: 1px solid white;
-  border-radius: 100%;
+  border-radius: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
 #week-07 p {
-  animation: spin 10s forwards infinite;
-  text-align: center;
+  animation: spin 6s reverse infinite;
   font-size: 1rem;
 }
 #week-07:hover {
@@ -198,6 +197,28 @@
 }
 #week-08:hover {
   background-color: grey;
+}
+
+/* 09 */
+#week-09 {
+  font-family: monospace;
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+#week-09 {
+  animation: spin 10s forwards infinite;
+  text-align: center;
+  font-size: 1rem;
+}
+#week-09:hover {
+  background-color: pink;
+  font-size: 2rem;
 }
 
 /* 32 */
