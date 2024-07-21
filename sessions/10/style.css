@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.week-10 main {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-10 p {
+  font-size: 1rem;
+}
+
+.week-10 section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.week-10 .word {
+  background-color: black;
+  color: white;
+}
+
+
+
+.week-10 h1 {
+  display: none;
+}
+
+.week-10 section:hover h1 {
+  display: inline-block;
+}
+.week-10 section:hover p {
+  display: none;
+}

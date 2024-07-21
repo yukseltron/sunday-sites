@@ -221,6 +221,32 @@
   font-size: 2rem;
 }
 
+/* 10 */
+#week-10 {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: white;
+  outline: 2px solid white;
+  outline-offset: 5px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+  animation: spin 7s reverse infinite;
+}
+#week-10 p {
+  color: black;
+}
+#week-10:hover {
+  outline-color: black;
+  outline-offset: -5px;
+}
+#week-10:hover p {
+  color: lightgrey;
+}
+
 /* 32 */
 #week-32:hover {
   background-color: white;
