@@ -3,7 +3,8 @@
 }
 
 .week-39 {
-  transition: background-color 2s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  background-size: cover;
 }
 
 .week-39 main {
@@ -24,12 +25,12 @@
 }
 
 .week-39 .lightbtn {
-  background-color: white;
+  background-color: goldenrod;
   width: 50px;
   height: 100px;
-  border: 1px solid white;
+  border: none;
   margin-top: -10px;
-  border-radius: 50%;
+  border-radius: 50% 50% 10% 10%;
 }
 .week-39:hover .lightbtn {
   cursor: grab;
@@ -40,9 +41,9 @@
 }
 .week-39 .string {
   width: 10px;
-  height: 200px;
+  height: 300px;
   margin-top: 0px;
-  background-color: white;
+  background-color: wheat;
 }
 .week-39:hover .string {
   cursor: grab;
