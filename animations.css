@@ -261,6 +261,22 @@
   transition: all 0.1s ease-in-out;
 }
 
+/* 39 */
+#week-39 a {
+  font-family: monospace;
+  transition: all 0.5s ease-in-out;
+  animation: spin 7s reverse infinite;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 15px;
+}
+#week-39 svg {
+  animation: spin 10s linear infinite;
+}
+#week-39:hover {
+  background-color: yellow;
+}
+
 #video3 {
   animation: spin 8s linear infinite;
 }
