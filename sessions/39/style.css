@@ -31,7 +31,7 @@
 
 .week-39 .lightbtn {
   background-color: goldenrod;
-  width: 25px;
+  width: 5px;
   height: 50px;
   border: none;
   margin-top: -10px;
@@ -41,11 +41,11 @@
   cursor: grab;
 }
 .week-39 .lightbtn:active {
-  transform: translateY(4px);
+  transform: translateY(6px);
   cursor: grabbing;
 }
 .week-39 .string {
-  width: 10px;
+  width: 2px;
   height: 300px;
   margin-top: 0px;
   background-color: wheat;
