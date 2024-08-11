@@ -1,6 +1,11 @@
 let currentAudio = null;
+let toggle = false;
 
 function toggleLamp() {
+    toggle = !toggle;
+    let lampSwitch = new Audio('audio/switch.mp3');
+    lampSwitch.play();
+
     const backgrounds = [
         'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhtZG1nM25mcDR2YTU2cmgwaWNmZnZ0cXY4eWp6eHJ4c2YwYjFtbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oI9JRgykipvxxWpSE/giphy.webp',
         'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmlidm9pZXhhaWtvMTg1ZGVpZ25lanNyendodGdqeWg3bnp3MHdhMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPhf02cXU9W4Le0/giphy.webp',
@@ -23,20 +28,30 @@ function toggleLamp() {
         '8.mp3', // Corresponds to the eighth background
     ];
 
-    const randomIndex = Math.floor(Math.random() * backgrounds.length);
-    const randomBackground = backgrounds[randomIndex];
-    const randomAudio = audioClips[randomIndex];
+    if (toggle) {
+        const randomIndex = Math.floor(Math.random() * backgrounds.length);
+        const randomBackground = backgrounds[randomIndex];
+        const randomAudio = audioClips[randomIndex];
 
-    var lamp = document.querySelector('.week-39');
-    lamp.style.backgroundImage = `url(${randomBackground})`;
-    lamp.style.backgroundPosition = 'bottom';
+        var lamp = document.querySelector('.week-39');
+        lamp.style.backgroundImage = `url(${randomBackground})`;
+        lamp.style.backgroundPosition = 'bottom';
 
-    if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
+
+        // Play the new audio
+        currentAudio = new Audio('audio/' + randomAudio);
+        currentAudio.play();
+    } else {
+        var lamp = document.querySelector('.week-39');
+        lamp.style.backgroundImage = '';
+
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
     }
-
-    // Play the new audio
-    currentAudio = new Audio('audio/' + randomAudio);
-    currentAudio.play();
 }
