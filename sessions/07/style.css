@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.week-07 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.week-07 #planet {
+  border-radius: 100%;
+  width: 500px;
+  height: 500px;
+  top: 25%;
+  position: fixed;
+}
+
+.week-07 p {
+  transform: skew(15deg, 15deg);
+}
+.week-07 #text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 200px;
+  mix-blend-mode: difference;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.week-07 #text:hover {
+  background-color: black;
+}

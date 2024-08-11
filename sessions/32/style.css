@@ -13,7 +13,7 @@ h1 {
     font-size: 3rem;
 }
 
-a {
+.week-32 a {
     color: transparent;
     border-color: white;
     border-width: 1px;
@@ -21,10 +21,10 @@ a {
     border-left: none;
     border-right: none;
 }
-a:focus {
+.week-32 a:hover {
     color: white;
 }
-a:visited {
+.week-32 a:visited {
     color: white !important;
 }
 
@@ -115,4 +115,8 @@ video::cue {
     100% {
         border-color: white;
     }
+}
+
+footer {
+    font-family: 'Handjet', monospace ;
 }

@@ -1,25 +1,280 @@
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(359deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 /* 01 */
+#week-01 {
+  border: 2px solid transparent;
+}
 #week-01:hover {
-  background-color: pink;
+  border-color: pink;
+  border-radius: 100%;
 }
 #week-01 svg {
-    animation: spin 10s linear infinite reverse;
+    border: 2px solid transparent;
+  animation: spin 10s linear infinite reverse;
 }
 #week-01:hover svg {
-    animation-play-state: paused;
-    background-color: red;
-    border-radius: 25%;
-    color: white;
-    transition: all 0.5s ease-in-out;
+  animation-play-state: paused;
+  border-color: red;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+/* 02 */
+#week-02 {
+  font-family: sans-serif;
+}
+#week-02:hover {
+  background-color: white;
+  border-radius: 25%;
+}
+#week-02 svg {
+  animation: spin 10s linear infinite reverse;
+}
+#week-02:hover svg {
+  animation-play-state: paused;
+  transition: all 0.5s ease-in-out;
+}
+#week-02 textPath {
+  transition: all 1s ease-in-out;
+}
+#week-02:hover textPath {
+  color: black;
+  letter-spacing: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+/* 03 */
+#week-03 {
+  font-family: monospace;
+}
+#week-03:hover {
+  background-color: lightgreen;
+  outline: 3px solid green;
+  border-radius: 100%;
+}
+#week-03 svg {
+  animation: spin 5s linear infinite;
+}
+#week-03:hover svg {
+  animation-play-state: paused;
+  transition: all 0.5s ease-in-out;
+}
+#week-03 textPath {
+  transition: all 1s ease-in-out;
+}
+#week-03:hover textPath {
+  color: black;
+  font-weight: bold;
+  transition: all 1s ease-in-out;
+}
+
+/* 04 */
+#week-04 {
+  font-family: serif;
+}
+#week-04:hover {
+  filter: drop-shadow(0 0 0.75rem lime);
+}
+#week-04 svg {
+  animation: spin 50s linear infinite;
+}
+#week-04:hover svg {
+  animation-play-state: paused;
+  transition: all 0.5s ;
+}
+#week-04 polygon {
+  fill: transparent;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+#week-04:hover polygon {
+  visibility: visible;
+  transition: all 0.5s;
+}
+#week-04 textPath {
+  color: white;
+  letter-spacing: 10px;
+  text-length: 100px;
+  length-adjust: spacingAndGlyphs;
+  transition: all 1s ease-in-out;
+}
+#week-04:hover textPath {
+  transition: all 1s ease-in-out;
+}
+
+/* 05 */
+#week-05 {
+  font-family: monospace;
+}
+#week-05 svg {
+  animation: spin 20s linear infinite reverse;
+}
+#week-05 textPath {
+  color: white;
+  letter-spacing: 50px;
+  transition: all 1s ease-in-out;
+}
+#week-05:hover textPath {
+  letter-spacing: 1px;
+  color: pink;
+  transition: all 1s ease-in-out;
+}
+
+/* 06 */
+#week-06 {
+  font-family: monospace;
+}
+#week-06 svg {
+  animation: spin 10s forwards infinite;
+}
+#week-06 textPath {
+  color: white;
+  letter-spacing: 50px;
+  transition: all 1s ease-in-out;
+}
+#week-06:hover {
+  background-color: #8EB1B8;
+  outline: 2px solid #8EB1B8;
+  outline-offset: 5px;
+  transition: all 1s ease-in-out;
+}
+#week-06:hover * {
+  color: black;
+}
+
+/* 07 */
+#week-07 {
+  font-family: monospace;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+#week-07 p {
+  animation: spin 6s reverse infinite;
+  font-size: 1rem;
+}
+#week-07:hover {
+  background-color: orange;
+}
+
+/* 08 */
+#week-08 {
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
+  margin-top: 25px;
+  border: 4px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  animation: spin 20s reverse infinite;
+  transition: all 0.5s ease-in-out;
+}
+#week-08 p {
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  width: 150px;
+  line-height: 3rem;
+  margin: 0;
+}
+#week-08 a {
+  border-color: white;
+}
+#week-08:hover {
+  background-color: grey;
+}
+
+/* 09 */
+#week-09 {
+  font-family: monospace;
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+#week-09 {
+  animation: spin 10s forwards infinite;
+  text-align: center;
+  font-size: 1rem;
+}
+#week-09:hover {
+  background-color: pink;
+  font-size: 2rem;
+}
+
+/* 10 */
+#week-10 {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: white;
+  outline: 2px solid white;
+  outline-offset: 5px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+  animation: spin 7s reverse infinite;
+}
+#week-10 p {
+  color: black;
+}
+#week-10:hover {
+  outline-color: black;
+  outline-offset: -5px;
+}
+#week-10:hover p {
+  color: lightgrey;
+}
+
+/* 32 */
+#week-32:hover {
+  background-color: white;
+}
+#week-32 svg {
+  animation: spin 12s linear infinite;
+}
+#week-32:hover svg {
+  animation-play-state: paused;
+  background-color: blue;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+/* 39 */
+#week-39 a {
+  font-family: monospace;
+  transition: all 0.5s ease-in-out;
+  animation: spin 7s reverse infinite;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 15px;
+}
+#week-39 svg {
+  animation: spin 10s linear infinite;
+}
+#week-39:hover {
+  background-color: yellow;
 }
 
 
@@ -38,10 +293,10 @@
 }
 
 #video3 {
-    animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
 }
 #video3:hover {
-    animation-play-state: paused;
-    color: red;
-    border: 1px solid red;
+  animation-play-state: paused;
+  color: red;
+  border: 1px solid red;
 }

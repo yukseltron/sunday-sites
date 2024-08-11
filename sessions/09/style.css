@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.week-09 {
+  cursor: none;
+}
+
+.week-09 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-transform: capitalize;
+}
+
+.week-09 main .balloon {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  animation: breathing 16s infinite;
+}
+
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(2);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

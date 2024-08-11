@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.week-06 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.week-06 main .viewbox .image img{
+  width: 1500px;
+}
+
+.week-06 main .viewbox {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border: 2px solid white;
+  overflow: scroll;
+}
+.week-06 .box {
+  position: fixed;
+  border: 1px solid white;
+  left: 2%;
+}

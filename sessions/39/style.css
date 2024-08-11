@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.week-39 {
+  transition: background-color 0.5s ease-in-out;
+  background-size: cover;
+}
+
+.week-39 main {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-39 p {
+  font-size: 1rem;
+}
+
+.week-39 section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: top;
+  align-items: center;
+}
+
+.week-39 .lightbtn {
+  background-color: goldenrod;
+  width: 50px;
+  height: 100px;
+  border: none;
+  margin-top: -10px;
+  border-radius: 50% 50% 10% 10%;
+}
+.week-39:hover .lightbtn {
+  cursor: grab;
+}
+.week-39 .lightbtn:active {
+  transform: translateY(4px);
+  cursor: grabbing;
+}
+.week-39 .string {
+  width: 10px;
+  height: 300px;
+  margin-top: 0px;
+  background-color: wheat;
+}
+.week-39:hover .string {
+  cursor: grab;
+}
+.week-39:active .string {
+  cursor: grabbing;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>39 - Lamp</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="week-39" style="background-color: black; color: white; overflow: hidden;">
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+  ">
+  </div>
+  <div style="
+    height: 500px;
+    width: 1000px;
+    background-color: black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50px;
+    right: -400px;
+  ">
+  </div>
+  <div style="
+    height: 500px;
+    width: 1000px;
+    background-color: black;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50px;
+    left: -400px;
+  ">
+  </div>
+  <main>
+    <div style="display: flex; justify-content: space-around;">
+      <section>
+          <div class="string"></div>
+          <button 
+            class="lightbtn"
+            onClick="toggleLamp()"
+          >
+          </button>
+      </section>
+    </div>
+  </main>
+  <footer
+    style="
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: 0.5em;
+      font-size: 1rem;
+    "
+  >
+    <p>
+      This is a
+      <a href="https://sundaysites.cafe/">Sunday Site</a>
+      made by
+      <a href="https://yukseltron.glitch.me"> yukseltron</a>.
+    </p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

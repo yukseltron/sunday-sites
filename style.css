@@ -78,3 +78,9 @@ text {
   letter-spacing: 1.25px;
   text-transform: uppercase;
 }
+
+footer a:hover {
+  color: var(--background);
+  mix-blend-mode: difference;
+  background-color: var(--color);
+}
