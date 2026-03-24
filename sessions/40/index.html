@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meant to be lost</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        font-family: monospace;
+        color: #fff;
+      }
+
+      .box {
+        width: 100%;
+        height: 200px;
+        mix-blend-mode: difference;
+      }
+      /* .box-1 {
+        background-color: orangered;
+      }
+      .box-2 {
+        background-color: orangered;
+      }
+      .box-3 {
+        background-color: orangered;
+      } */
+
+      p {
+        max-width: 400px;
+        text-align: center;
+        line-height: 1.6;
+        margin-top: 2rem;
+        font-size: 200%;
+      }
+
+      @keyframes fadeToBlack {
+        from { 
+            opacity: 1; 
+        }
+        to { 
+            opacity: 0; 
+        }
+      }
+
+      @keyframes fadeIn {
+        from { 
+            opacity: 0; 
+        }
+        to { 
+            opacity: 1; 
+        }
+      }
+
+      .box {
+        animation: fadeToBlack 3s ease-in 20s forwards;
+      }
+      .box:hover {
+        background-color: white;
+        transition: all 2s ease-in-out;
+        cursor: pointer;
+      }
+
+      p:nth-of-type(1) {
+        animation: fadeToBlack 3s ease-in 6s forwards;
+        transform: rotate(120deg);
+        transform: skew(200deg, 50deg);
+      }
+
+      p:nth-of-type(2) {
+        animation: fadeToBlack 3s ease-in 10s forwards;
+        transform: rotate3d(0, 1, 0, 1020deg);
+        transform: skew(40deg, 80deg);
+      }
+
+      p:nth-of-type(3) {
+        animation: fadeToBlack 3s ease-in 14s forwards;
+        transform: rotate(100deg);
+        transform: skew(-1000deg, 200deg);
+      }
+
+      p:nth-of-type(4) {
+        animation: fadeToBlack 3s ease-in 18s forwards;
+        transform: rotate3d(1, 0, 0, 720deg);
+        transform: skew(40deg, -120deg);
+      }
+
+      .final {
+        opacity: 0;
+        animation: fadeIn 3s ease-in 22s forwards;
+        transform: rotate(360deg);
+        transform: skew(200deg, -50deg);
+        position: absolute;
+      }
+      .final:hover {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Take care over there.<br/>
+      Sunset low on the dark horizon.
+    </p>
+    <div class="box box-1"></div>
+    <p>
+      There is only so much time we have left.<br/>
+      There is only so much left to say.
+    </p>
+    <div class="box box-2"></div>
+    <p>
+      The number of breaths being made.<br/>
+      The number of heartbeats counting down.<br/>
+    </p>
+    <div class="box box-3"></div>
+    <p>
+      Cherish it in the memories you leave behind.<br/>
+      Forever unyielding against time.
+    </p>
+    <div class="box box-4"></div>
+    <p class="final">
+      And so the time ran out and our mouths were left parched and dry of thirst, such an unbearable thirst that leaves you wishing and regretting the actions you took in time and before you were aware of who you were becoming back then to today.
+    </p>
+  </body>
+</html>

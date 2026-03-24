@@ -300,3 +300,16 @@
   color: red;
   border: 1px solid red;
 }
+
+/* 40 */
+#week-40 svg {
+  animation: spin 30s linear infinite;
+  transition: all 2s ease-in-out;
+}
+#week-40:hover svg {
+  animation: spin 80s linear infinite reverse;
+  transition: all 2s ease-in-out;
+  color: black;
+  border: 2px solid white;
+  border-radius: 100%;
+}
